@@ -29,7 +29,7 @@ const Terminal = () => {
 
             <div className="techstack">
                 <p>
-                    <span className="font-bold">@anirudh % </span>
+                    <span className="font-bold text-[#00A154]">@anirudh $ </span>
                     show tech stack
                 </p>
 
@@ -61,8 +61,8 @@ const Terminal = () => {
                         {loadedStacks} of {totalStacks} stacks loaded successfully ({percentLoaded}%)
                     </p>
 
-                    <p className="text-black">
-                        <Flag size={15} fill="black" />
+                    <p className="text-[#00A154]">
+                        <Flag size={15} fill="#00A154" />
                         Render time: {renderTime !== null ? `${renderTime}ms` : "…"}
                     </p>
                 </div>
