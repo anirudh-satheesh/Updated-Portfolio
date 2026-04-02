@@ -102,15 +102,15 @@ body {
         @apply flex gap-2;
 
         .close {
-            @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
+            @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer border-0 p-0;
         }
 
         .minimize {
-            @apply size-3.5 rounded-full bg-[#ffc030] cursor-pointer;
+            @apply size-3.5 rounded-full bg-[#ffc030] cursor-pointer border-0 p-0;
         }
 
         .maximize {
-            @apply size-3.5 rounded-full bg-[#2acb42] cursor-pointer;
+            @apply size-3.5 rounded-full bg-[#2acb42] cursor-pointer border-0 p-0;
         }
     }
 
@@ -120,10 +120,11 @@ body {
 
     .window-maximized {
         @apply !top-10 !left-0 !w-dvw !transform-none !rounded-none flex flex-col;
+
         height: calc(100dvh - 2.5rem) !important;
     }
 
-    .window-maximized > :not(#window-header) {
+    .window-maximized > :not(.window-header) {
         @apply !flex-1 !w-full overflow-y-auto;
     }
 

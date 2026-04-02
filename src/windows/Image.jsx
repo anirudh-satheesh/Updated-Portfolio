@@ -14,7 +14,7 @@ const ImageWindowContent = () => {
 
     return(
         <>
-            <div id="window-header">
+            <div id="window-header" className="window-header">
                 <WindowControls target="imgfile" />
                 <h2>{name}</h2>
             </div>
