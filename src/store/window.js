@@ -23,8 +23,17 @@ const useWindowStore = create(
             const win = state.windows[windowKey];
             if (!win) return;
             win.isOpen = false;
+            win.isMaximized = false;
             win.zIndex = INITIAL_Z_INDEX;
             win.data = null;
+        }),
+
+
+        toggleMaximizeWindow: (windowKey) => set((state) => {
+            const win = state.windows[windowKey];
+            if (!win) return;
+            win.isMaximized = !win.isMaximized;
+            win.zIndex = state.nextZIndex++;
         }),
 
 
