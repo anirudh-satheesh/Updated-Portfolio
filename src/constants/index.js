@@ -16,7 +16,7 @@ const navLinks = [
     },
 ];
 
-const navIcons = [ 
+const navIcons = [
     {
         id: 1,
         img: "/icons/wifi.svg",
@@ -74,30 +74,30 @@ const dockApps = [
     },
 ];
 
-const blogPosts = [
-    {
-        id: 1,
-        date: "Sep 2, 2025",
-        title:
-            "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
-        image: "/images/blog1.png",
-        link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
-    },
-    {
-        id: 2,
-        date: "Aug 28, 2025",
-        title: "The Ultimate Guide to Mastering Three.js for 3D Development",
-        image: "/images/blog2.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
-    },
-    {
-        id: 3,
-        date: "Aug 15, 2025",
-        title: "The Ultimate Guide to Mastering GSAP Animations",
-        image: "/images/blog3.png",
-        link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
-    },
-];
+// const blogPosts = [
+//     {
+//         id: 1,
+//         date: "Sep 2, 2025",
+//         title:
+//             "TypeScript Explained: What It Is, Why It Matters, and How to Master It",
+//         image: "/images/blog1.png",
+//         link: "https://jsmastery.com/blog/typescript-explained-what-it-is-why-it-matters-and-how-to-master-it",
+//     },
+//     {
+//         id: 2,
+//         date: "Aug 28, 2025",
+//         title: "The Ultimate Guide to Mastering Three.js for 3D Development",
+//         image: "/images/blog2.png",
+//         link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-three-js-for-3d-development",
+//     },
+//     {
+//         id: 3,
+//         date: "Aug 15, 2025",
+//         title: "The Ultimate Guide to Mastering GSAP Animations",
+//         image: "/images/blog3.png",
+//         link: "https://jsmastery.com/blog/the-ultimate-guide-to-mastering-gsap-animations",
+//     },
+// ];
 
 const techStack = [
     {
@@ -122,7 +122,7 @@ const techStack = [
     },
     {
         category: "Dev Tools",
-        items: ["Git", "GitHub", "Firebase", "Vite" ],
+        items: ["Git", "GitHub", "Firebase", "Vite"],
     },
 ];
 
@@ -204,7 +204,7 @@ export {
     navLinks,
     navIcons,
     dockApps,
-    blogPosts,
+    // blogPosts,
     techStack,
     socials,
     photosLinks,
@@ -235,11 +235,11 @@ const WORK_LOCATION = {
                     fileType: "txt",
                     position: "top-10 left-5",
                     description: [
-                        "(Currently in development)",
-                        "The Developer Roadmap platform is a clean and structured guide designed to help learners navigate their tech journey with clarity.",
-                        "It breaks down complex learning paths into simple, visually organized steps so users never feel lost or overwhelmed.",
-                        "Whether you're starting from zero or leveling up in a new domain, it provides a clear sense of direction through curated and easy-to-follow roadmaps.",
-                        "It's built with Next.js and Tailwind, ensuring fast performance, responsive design, and a clean, premium look.",
+                        "Kaizen (Meaning - continuous improvement) is an AI-powered personalized learning roadmap engine designed to guide users based on their goals and current skill level.",
+                        "The system analyzes user inputs and generates structured, step-by-step learning paths tailored to individual needs.",
+                        "It transforms complex learning journeys into simple, visually organized roadmaps, helping users stay focused and avoid confusion.",
+                        "Whether starting from scratch or advancing in a new domain, it provides clear direction through adaptive and easy-to-follow progression paths.",
+                        "Built using Next.js and Tailwind CSS, it ensures fast performance, responsive design, and a clean, modern user experience.",
                     ],
                 },
                 {
@@ -336,7 +336,7 @@ const WORK_LOCATION = {
                     icon: "/images/safari.png",
                     kind: "file",
                     fileType: "url",
-                    href: "https://trackdailyworkout.vercel.app/",
+                    href: "https://strive-gym.vercel.app/",
                     position: "top-10 left-55",
                 },
                 {
@@ -462,14 +462,14 @@ export const locations = {
 const INITIAL_Z_INDEX = 1000;
 
 const WINDOW_CONFIG = {
-    finder: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    contact: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    resume: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    safari: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    photos: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    terminal: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    txtfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
-    imgfile: { isOpen: false, zIndex: INITIAL_Z_INDEX, data: null },
+    finder: { isOpen: false, isMaximized: false, zIndex: INITIAL_Z_INDEX, data: null },
+    contact: { isOpen: false, isMaximized: false, zIndex: INITIAL_Z_INDEX, data: null },
+    resume: { isOpen: false, isMaximized: false, zIndex: INITIAL_Z_INDEX, data: null },
+    safari: { isOpen: false, isMaximized: false, zIndex: INITIAL_Z_INDEX, data: null },
+    photos: { isOpen: false, isMaximized: false, zIndex: INITIAL_Z_INDEX, data: null },
+    terminal: { isOpen: false, isMaximized: false, zIndex: INITIAL_Z_INDEX, data: null },
+    txtfile: { isOpen: false, isMaximized: false, zIndex: INITIAL_Z_INDEX, data: null },
+    imgfile: { isOpen: false, isMaximized: false, zIndex: INITIAL_Z_INDEX, data: null },
 };
 
 export { INITIAL_Z_INDEX, WINDOW_CONFIG };
