@@ -102,20 +102,30 @@ body {
         @apply flex gap-2;
 
         .close {
-            @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer;
+            @apply size-3.5 rounded-full bg-[#ff6157] cursor-pointer border-0 p-0;
         }
 
         .minimize {
-            @apply size-3.5 rounded-full bg-[#ffc030] cursor-pointer;
+            @apply size-3.5 rounded-full bg-[#ffc030] cursor-pointer border-0 p-0;
         }
 
         .maximize {
-            @apply size-3.5 rounded-full bg-[#2acb42] cursor-pointer;
+            @apply size-3.5 rounded-full bg-[#2acb42] cursor-pointer border-0 p-0;
         }
     }
 
     #window-header {
         @apply flex items-center justify-between px-4 py-3 rounded-t-lg bg-gray-900 border-b border-gray-200 select-none text-sm text-gray-400;
+    }
+
+    .window-maximized {
+        @apply !top-10 !left-0 !w-dvw !transform-none !rounded-none flex flex-col;
+
+        height: calc(100dvh - 2.5rem) !important;
+    }
+
+    .window-maximized > :not(.window-header) {
+        @apply !flex-1 !w-full overflow-y-auto;
     }
 
     #safari {
@@ -314,7 +324,7 @@ body {
     }
 
     #finder {
-        @apply absolute w-3xl left-40 top-20 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl;
+        @apply absolute w-3xl left-40 top-20 shadow-2xl drop-shadow-2xl overflow-hidden rounded-xl bg-gray-800;
 
         .sidebar {
             @apply w-48 bg-gray-800 border-r border-gray-700 flex flex-col p-5 space-y-3;
@@ -341,7 +351,7 @@ body {
         }
 
         .content {
-            @apply flex-1 p-8 bg-gray-800 max-w-2xl relative;
+            @apply flex-1 p-8 bg-gray-800 relative;
 
             li {
                 @apply absolute flex items-center flex-col gap-3;
@@ -358,7 +368,7 @@ body {
     }
 
     #txtfile {
-        @apply w-md absolute top-36 right-32 shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+        @apply w-md absolute top-36 right-32 shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden bg-gray-800;
 
         h2 {
             @apply font-bold text-sm text-center w-full;
@@ -366,7 +376,7 @@ body {
     }
 
     #imgfile {
-        @apply w-xl absolute top-40 left-2/12 bg-white shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
+        @apply w-xl absolute top-40 left-2/12 bg-gray-800 shadow-2xl drop-shadow-2xl rounded-xl overflow-hidden;
 
         #window-header {
             p {
